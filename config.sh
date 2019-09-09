@@ -24,7 +24,9 @@ RUN_ARGS=(
     -v $XAUTHORITY:/tmp/.Xauthority
     -e XAUTHORITY=/tmp/.Xauthority
 
-    -v $(pwd)/data/local/share/DBeaverData:/home/gabi/.local/share/DBeaverData
+    -v $(pwd)/data/local:/home/gabi/.local
+    -v $(pwd)/data/cache:/home/gabi/.cache
+    -v $(pwd)/data/eclipse:/home/gabi/.eclipse
 
     --memory="2g"
     --cpu-shares=1024
