@@ -31,6 +31,5 @@ RUN_ARGS=(
     --shm-size 2g
 
     --rm
-    -it
-    # -d
+    -d
     )
