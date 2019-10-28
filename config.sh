@@ -27,7 +27,7 @@ RUN_ARGS=(
     -v $(pwd)/data/local:/home/$(whoami)/.local
     -v $(pwd)/data/cache:/home/$(whoami)/.cache
     -v $(pwd)/data/eclipse:/home/$(whoami)/.eclipse
-    -v $(pwd)/data/Downloads:/home/$(whoami)/Downloads
+    -v /home/$(whoami)/Downloads:/home/$(whoami)/Downloads
 
     --memory="2g"
     --cpu-shares=1024
